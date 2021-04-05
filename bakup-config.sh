@@ -64,6 +64,12 @@ tar -rvpf "$Filename" ~/.profile
 tar -rvpf "$Filename" /etc/profile
 tar -rvpf "$Filename" ~/.profile
 
+@ csh
+tar -rvpf "$Filename" /etc/cshrc
+tar -rvpf "$Filename" ~/.login
+tar -rvpf "$Filename" ~/.cshrc
+tar -rvpf "$Filename" ~/.logout
+
 # Display managers
 # Contains only GNOME and KDE. Other DEs to be added later
 # tar -rvpf "$Filename" /etc/gdm/gdm.conf             # GNOME
@@ -146,6 +152,10 @@ find .* -maxdepth 0 -type f -exec tar -rvf "$Filename" {} +
 # tar -rvpf "$Filename" /etc/portage/profile/package.provided
 # tar -rvpf "$Filename" /etc/profile.env
 
+# Arch/Manjaro
+# Package Manager
+# tar -rvpf "$Filename" /etc/pacman.conf
+# tar -rvpf "$Filename" /etc/pacman.d/mirrorlist
 
 # GTK (Optional)
 tar -rvpf "$Filename" /etc/gtk-2.0/gtkrc
