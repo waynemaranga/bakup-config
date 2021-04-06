@@ -75,6 +75,12 @@ tar -rvpf "$Filename" ~/.logout
 # tar -rvpf "$Filename" /etc/gdm/gdm.conf             # GNOME
 # tar -rvpf "$Filename" /usr/share/config/kdm/kdmrc   # KDE
 
+# XDM
+# Depeding on your distribution /etc may be replaced by /usr/lib or /usr/local/lib
+# tar -rvpf "$Filename" /etc/X11/xdm*
+# tar -rvpf "$Filename" /usr/X11R6/lib/X11/xdm # for SuSE 6.4
+# tar -rvpf "$Filename" /etc/X11/X*access
+
 # fstab
 tar -rvpf "$Filename" /etc/fstab # links devices to mount points. Important if you have auto-mount scripts
 
